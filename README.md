@@ -1,4 +1,4 @@
-# Magic Mole
+# SSH Surfer
 Bash SSH connection tool
 
 ### Required Packages
