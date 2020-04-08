@@ -29,7 +29,7 @@ sed -i 's/^input=.*$/input="\/home\/$USER\/.ssh\/servers.csv"/g' ssh-surfer.sh
 **MacOS**
 ```
 cd ssh-surfer
-cp example-servers.csv /Users/$USER/servers.csv
+cp example-servers.csv /Users/$USER/.ssh/servers.csv
 sed -i '' 's/^input=.*$/input="\/Users\/$USER\/.ssh\/servers.csv"/g' ssh-surfer.sh
 ```
 You can now execute the script directly from the git repository directory if you choose but you may want to
