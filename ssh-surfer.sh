@@ -118,7 +118,7 @@ else
 			prettyPrint "$f1" "$f2" "$f3" "$f4"
 		elif [ $command = "connect" ]; then
 			printf "Connecting to $f2 at $f3 as user $f4...\n\n"
-			ssh -t -l $f4 $f3 < /dev/tty
+			ssh -t -l $f4 $f3 bash < /dev/tty
 		elif [ $command = "deploy" ]; then
 			printf "Deploying SSH keys for passwordless login to $f2 at $f3 as user $f4...\nType in your password for the server when prompted.\n\n"
 			connectionString="$f4@$f3"
